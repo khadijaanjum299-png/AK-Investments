@@ -1,0 +1,23 @@
+/* DARK BACKGROUND */
+body {
+  background: radial-gradient(circle at top, #1a1a2e, #0f0f1a);
+  color: #eaeaea;
+  overflow-x: hidden;
+}
+
+/* SNOWFLAKES */
+.snowflake {
+  position: fixed;
+  top: -10px;
+  color: rgba(255, 255, 255, 0.9);
+  user-select: none;
+  pointer-events: none;
+  animation: snowFall linear infinite;
+  z-index: 1;
+}
+
+@keyframes snowFall {
+  to {
+    transform: translateY(110vh);
+  }
+}
